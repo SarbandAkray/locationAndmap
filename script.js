@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded",()=>{
         fetch('https://api.bigdatacloud.net/data/reverse-geocode-client?latitude='+possition.coords.latitude+'&longitude='+possition.coords.longitude+'&localityLanguage=ku')
         .then(response => response.json())
         .then(data =>{
-            console.log(data);
             document.getElementById("continet").innerHTML=data.continent;
             document.getElementById("country").innerHTML=data.countryName;
             var city = document.getElementById("city");
