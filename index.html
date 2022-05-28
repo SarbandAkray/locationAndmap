@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+    <title>Location and Map</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>لۆکەیشن و ماپ</h1>
+            <div class="content">
+
+                <div class="card" data-tilt data-tilt-scale="0.95" data-tilt-startY="40" id="card">
+                   <div class="inner">
+                       <h1>قارە :<span id="continet"></span></h1>
+                       <br>
+                       <h2>وڵات : <span id="country"></span></h2>
+                       <br>
+                       <h2>شار : <span id="city"></span></h2>
+                       <br>
+                       <h3>شوێنت لەسەر ماپ :</h3>
+                       <br>
+                       <div id="map" class="map">
+                           
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <footer>
+               <h3>
+                   made by sarband
+               </h3>
+            </footer>
+    </div>
+    
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
